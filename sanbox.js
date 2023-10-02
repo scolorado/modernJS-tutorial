@@ -28,7 +28,8 @@ console.log(index);
 
 //common string methods
 
-let result1 = email.lastIndexOf('g');
+let resultA = email.lastIndexOf('g');
+console.log(resultA);
 
 //end of tutorial 2
 

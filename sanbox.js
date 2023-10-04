@@ -155,3 +155,119 @@ const queens = ['nikki', 'ice spice', 'stevie'];
 for (let i = 0; i < queens.length; i++){
     console.log(queens[i]);
 } 
+
+//while loops
+const slayers = ['unicorns', 'rainbows','butterflys'];
+let pp = 0;
+// while(i < 5){
+//     console.log('in loop: ', i);
+//     i++;
+// }
+while (pp < slayers.length){
+    console.log(slayers[pp]);
+    pp++;
+}
+
+let aa = 8;
+do{
+    console.log('val of aa is: ',aa);
+    aa++;
+} while (aa < 5);
+
+//if statements
+const myAge = 18;
+if (myAge > 21){
+    console.log('you are 21 years or older')
+}
+
+if(queens.length > 2){
+    console.log("thats a lot of queens");
+}
+
+//logical operatirs - OR || and AND &&
+const password = 'yourMomlols!';
+if (password.length >= 12 && password.includes('!')){
+    console.log('that password is super duper strong!');
+} else if (password.length >= 8 || password.includes('!') && password.length >= 5){
+    console.log('ur password is fire bro');
+}else{
+    console.log('ur password is stinky');
+}
+
+
+//logical NOT (!)
+let poopy = false;
+if (!poopy){
+    console.log('poopy lol');
+}
+
+//break and continue
+const scores = [69, 77, 0, 420, 100, 23, 69];
+for (let i=0; i < scores.length; i++){
+    if (scores[i] ===0){
+        continue;
+    }
+    console.log('your score: ', scores[i])
+    if(scores[i] === 420){
+        console.log('congrats u slayed the game!');
+        break;
+    }
+}
+
+//switch statments
+const grade = 'F';
+
+switch(grade){
+    case 'A':
+        console.log('you got an A! congrats on slaying');
+        break;
+    case 'B':
+        console.log('you got an B! cu r avergae :D');
+        break;
+    case 'C':
+        console.log('you got an C! cs get degrees igs');
+        break;
+    case 'D':
+        console.log('you got an D! yikes');
+        break;
+    case 'F':
+        console.log('you got an F! you  #failed :(');
+        break;
+    default:
+        console.log('not valid grade');
+}
+
+
+// variables & block scope
+// let age = 25;
+// if(true){
+//     let age= 28;
+//     let name = 'carol';
+//     console.log ('inside 1st code block: ' , age, name);
+
+//     if(true){
+//         let age = 32;
+//         console.log('inside 2nd code block: ', age)
+//     }
+// }
+// console.log ('outside code block: ' , age);
+
+
+//function declreation
+// function greet(){
+//     console.log('hello there!!!');
+//}
+//function expression
+
+// const speak = function(){
+//     console.log('slay');
+// };
+// greet();
+// speak(); 
+// speak(); 
+
+//arguments and parameters
+const speak = function( title = 'hannah', time= 'october'){
+    console.log(`good ${time} ${title}`);
+};
+speak();

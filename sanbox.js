@@ -267,7 +267,12 @@ switch(grade){
 // speak(); 
 
 //arguments and parameters
-const speak = function( title = 'hannah', time= 'october'){
-    console.log(`good ${time} ${title}`);
-};
-speak();
+// const speak = function( title = 'hannah', time= 'october'){
+//     console.log(`good ${time} ${title}`);
+// };
+// speak();
+
+const calcArea = function (radius){
+    let area = 3.24 * radius **2;
+    console.log(area);
+}

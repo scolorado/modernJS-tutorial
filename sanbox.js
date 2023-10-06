@@ -321,3 +321,39 @@ console.log(html);
 ul.innerHTML = html;
 
 //end of tutorial 4
+
+//object literals
+let user = {
+    name: 'crystal',
+    age:'20',
+    email:'crystalSlays123@gmail.com',
+    location:'london',
+    blogs:['why I should marry perdo pascal', 'why mac & cheese slays'],
+    login: function(){
+        console.log('the user logged in');
+    },
+    logout:function(){
+        console.log('the user logged out');
+    },
+    logBlogs: function(){
+        //console.log(this.blogs);
+        
+        console.log('this user has written the following blogs:');
+        this.blogs.forEach (blog => {
+            console.log(blog);
+        })
+    }
+};
+user.login();
+console.log(user.blogs);
+user.logBlogs();
+console.log(this);
+console.log(user['email']);
+console.log(typeof user);
+user.logout();
+
+
+//math objects
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);

@@ -272,7 +272,52 @@ switch(grade){
 // };
 // speak();
 
-const calcArea = function (radius){
-    let area = 3.24 * radius **2;
-    console.log(area);
+// const calcArea = function (radius){
+//     return 3.24 * radius **2;
+//     //console.log(area);
+//     //return area;
+// };
+// const area = calcArea(5);
+// console.log(area);
+
+//arrow function
+// const calcArea = radius => 3.24 * radius **2;
+
+// const area = calcArea(5);
+// console.log ('area is:', area);
+
+//practicing arrow functions
+const greet = () => 'hey man';
+const heyMan = greet();
+console.log(heyMan);
+
+const bill = (products, tax) => {
+    let total = 0;
+    for (let m= 0; m < products.length; m++){
+        total += products[m] + products[m] * tax;
+    }
+    return total;
 }
+console.log("The bill is $" + bill([10,16,32], 0.2));
+
+
+//callbacks and forEach
+let eggs = ['vanessa', 'jenny', 'serena', 'blair'];
+const logPerson = (person, index) => {
+    console.log(`${index} - hello ${person}, did you miss me?`);
+};
+eggs.forEach(logPerson);
+
+
+//get a reference to the 'ul'
+const ul= document.querySelector('.people');
+const people = ['vanessa', 'jenny', 'serena', 'blair'];
+let html = ``;
+people.forEach(function(person){
+    //create html template
+    html += `<li style= "color:purple">${person}</li>`;
+});
+console.log(html);
+ul.innerHTML = html;
+
+//end of tutorial 4

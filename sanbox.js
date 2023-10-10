@@ -357,3 +357,59 @@ user.logout();
 console.log(Math);
 console.log(Math.PI);
 console.log(Math.E);
+
+// const area = 7.7;
+// console.log(Math.round(area));
+// console.log(Math.floor(area));
+
+const random = Math.random();
+console.log(random);
+console.log(Math.round(random * 100));
+
+// const paras = document.querySelectorAll('p');
+// paras.forEach(para => {
+//     console.log(para);
+// });
+// console.log (paras[2]);
+
+
+//get an element by ID
+// const testubg = document.getElementsById('poopy1');
+// console.log(testubg);
+
+//get eleements by their class name
+
+
+//get elements by their tag name
+// const para = document.getElementsByTagName('p');
+// console.log(para);
+
+
+// const para = document.querySelector('p');
+// para.innerTest = 'oopsie';
+
+const paras = document.querySelectorAll('p');
+paras.forEach (para =>{
+    console.log(para.innerText);
+});
+
+
+// const caca = ['broski', 'dude', 'brah'];
+// caca.forEach(caca => {
+//     content.innerHTML += `<p>${caca}</p>`;
+// });
+
+const link = document.querySelector('a');
+console.log(link.getAttribute('href'));
+link.setAttribute('href', 'https://classroom.google.com/c/NjMzNDE0MDMwMjM4/a/NjI2MTgxODU5ODYx/details');
+link.innerText = 'Not google classroom';
+
+const mssg = document.querySelector('p');
+console.log(mssg.getAttribute('class'));
+mssg.setAttribute('class', 'error');
+mssg.setAttribute('style', 'color: pink');
+
+const title = document.querySelector('h3');
+//title.setAttribute('style', 'margin:50px;');
+console.log(title.style);
+title.style.margin = '50px';
